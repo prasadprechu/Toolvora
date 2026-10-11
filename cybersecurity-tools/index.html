@@ -4,23 +4,273 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cybersecurity Tools | Toolvora</title>
-  <meta name="description" content="Explore cybersecurity tools for vulnerability assessment, penetration testing, application security, and threat intelligence.">
+
+  <title>Cybersecurity Tools Directory | Toolvora</title>
+  <meta name="description" content="Explore cybersecurity tools for vulnerability scanning, penetration testing, web application security, network analysis, and threat intelligence.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prasadprechu.github.io/Toolvora/cybersecurity-tools/">
   <link rel="stylesheet" href="../assets/css/category.css">
+
+  <style>
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 275px;
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+    }
+
+    .tool-description {
+      flex-grow: 1;
+    }
+
+    .tool-card .tool-label {
+      display: inline-block;
+      padding: 5px 9px;
+      background: #eef2ff;
+      border-radius: 6px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #2457d6;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background .2s ease;
+    }
+
+    .tool-link:hover {
+      background: #183fa8;
+    }
+
+    .directory-note {
+      margin-top: 28px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tool-card {
+        min-height: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header><a class="brand" href="../">Toolvora</a><nav><a href="../">Home</a><a href="../#categories">Categories</a></nav></header>
-<section class="hero"><div class="breadcrumb"><a href="../">Home</a> / Cybersecurity Tools</div><h1>Cybersecurity Tools</h1><p>Explore tools that help security professionals assess vulnerabilities, test defenses, monitor threats, and protect digital systems.</p></section>
-<main>
-  <div class="section-heading"><h2>Explore Security Tools</h2><p>Browse security tools by their primary use case.</p></div>
-  <div class="tool-grid">
-    <article class="tool-card"><div class="tool-icon">🔎</div><span class="tool-label">Assessment</span><h3>Vulnerability Scanners</h3><p>Identify potential weaknesses in systems and applications.</p></article>
-    <article class="tool-card"><div class="tool-icon">🛡️</div><span class="tool-label">Application Security</span><h3>Web Security Testing</h3><p>Assess websites and applications for common security issues.</p></article>
-    <article class="tool-card"><div class="tool-icon">🧪</div><span class="tool-label">Authorized Testing</span><h3>Penetration Testing</h3><p>Tools for authorized security testing and validation.</p></article>
-    <article class="tool-card"><div class="tool-icon">🚨</div><span class="tool-label">Threat Research</span><h3>Threat Intelligence</h3><p>Research indicators, vulnerabilities, and emerging threats.</p></article>
+
+<header>
+  <a class="brand" href="../">Toolvora</a>
+  <nav aria-label="Main navigation">
+    <a href="../">Home</a>
+    <a href="../#categories">Categories</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="breadcrumb">
+    <a href="../">Home</a> / Cybersecurity Tools
   </div>
-  <section class="info-panel"><h2>Choose Security Tools Carefully</h2><p>Check tool capabilities, supported environments, licensing, and authorized-use requirements before adoption.</p></section>
+
+  <h1>Cybersecurity Tools</h1>
+
+  <p>
+    Discover tools for vulnerability assessment, penetration testing,
+    application security, network analysis, digital forensics,
+    and threat intelligence.
+  </p>
+</section>
+
+<main>
+  <section aria-labelledby="tools-heading">
+    <div class="section-heading">
+      <h2 id="tools-heading">Explore Cybersecurity Tools</h2>
+      <p>
+        Compare security tools used by security analysts, penetration
+        testers, developers, incident responders, and IT teams.
+      </p>
+    </div>
+
+    <div class="tool-grid">
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🔎</div>
+        <span class="tool-label">Vulnerability Assessment</span>
+        <h3>Nessus</h3>
+        <p class="tool-description">
+          Assess systems and infrastructure for known vulnerabilities,
+          misconfigurations, and other security weaknesses.
+        </p>
+        <a class="tool-link" href="https://www.tenable.com/products/nessus"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🧪</div>
+        <span class="tool-label">Penetration Testing</span>
+        <h3>Metasploit</h3>
+        <p class="tool-description">
+          Support authorized penetration testing and security
+          validation in controlled environments.
+        </p>
+        <a class="tool-link" href="https://www.metasploit.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🛡️</div>
+        <span class="tool-label">Web Application Security</span>
+        <h3>Burp Suite</h3>
+        <p class="tool-description">
+          Test web application security using tools for HTTP
+          traffic inspection, request analysis, and vulnerability testing.
+        </p>
+        <a class="tool-link" href="https://portswigger.net/burp"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🌐</div>
+        <span class="tool-label">Network Security Testing</span>
+        <h3>Nmap</h3>
+        <p class="tool-description">
+          Discover hosts and services on authorized networks
+          to support network inventory and security assessment.
+        </p>
+        <a class="tool-link" href="https://nmap.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📡</div>
+        <span class="tool-label">Network Analysis</span>
+        <h3>Wireshark</h3>
+        <p class="tool-description">
+          Capture and analyze network traffic to troubleshoot
+          connections and investigate network activity.
+        </p>
+        <a class="tool-link" href="https://www.wireshark.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🔬</div>
+        <span class="tool-label">Web Security Testing</span>
+        <h3>OWASP ZAP</h3>
+        <p class="tool-description">
+          Test web applications for security weaknesses using
+          an open-source web application security testing proxy.
+        </p>
+        <a class="tool-link" href="https://www.zaproxy.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🚨</div>
+        <span class="tool-label">Threat Intelligence</span>
+        <h3>VirusTotal</h3>
+        <p class="tool-description">
+          Examine files, URLs, domains, and IP addresses using
+          aggregated threat analysis and security signals.
+        </p>
+        <a class="tool-link" href="https://www.virustotal.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🕵️</div>
+        <span class="tool-label">Digital Forensics</span>
+        <h3>Autopsy</h3>
+        <p class="tool-description">
+          Investigate digital evidence using an open-source
+          digital forensics platform.
+        </p>
+        <a class="tool-link" href="https://www.autopsy.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📊</div>
+        <span class="tool-label">Security Monitoring</span>
+        <h3>Wazuh</h3>
+        <p class="tool-description">
+          Monitor endpoints and security events with capabilities
+          for threat detection, log analysis, and compliance monitoring.
+        </p>
+        <a class="tool-link" href="https://wazuh.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🧭</div>
+        <span class="tool-label">Attack Surface Discovery</span>
+        <h3>OWASP Amass</h3>
+        <p class="tool-description">
+          Map an organization's external attack surface through
+          asset discovery and network reconnaissance.
+        </p>
+        <a class="tool-link" href="https://owasp.org/www-project-amass/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+    </div>
+
+    <p class="directory-note">
+      Tool capabilities and licensing can change. Review each provider's
+      official documentation and use security testing tools only on
+      systems you own or are authorized to assess.
+    </p>
+  </section>
+
+  <section class="info-panel">
+    <h2>Choose the Right Cybersecurity Tool</h2>
+    <p>
+      Consider your security objectives, supported environments,
+      reporting capabilities, integrations, licensing, and team
+      expertise before selecting a tool.
+    </p>
+  </section>
 </main>
-<footer>© 2026 Toolvora · <a href="../">Home</a></footer>
+
+<footer>
+  <p>© 2026 Toolvora. All rights reserved.</p>
+  <p>
+    <a href="../">Home</a> ·
+    <a href="../#categories">All Categories</a>
+  </p>
+</footer>
+
 </body>
 </html>
