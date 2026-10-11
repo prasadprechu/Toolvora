@@ -1186,10 +1186,10 @@ categories.forEach((category, index) => {
   section.className = "category-section";
   section.id = "section-" + category.slug;
 
-  section.innerHTML = `
+  
+section.innerHTML = `
     <div class="section-heading category-heading">
       <div>
-        <h2>${category.name}</h2>
         <h2>${category.name}</h2>
         <p>${category.description}</p>
       </div>
@@ -1199,6 +1199,7 @@ categories.forEach((category, index) => {
     </div>
     <div class="tool-grid"></div>
   `;
+
 
   toolSections.appendChild(section);
 
