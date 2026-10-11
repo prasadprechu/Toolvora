@@ -2,23 +2,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data Analytics & BI Tools | Toolvora</title>
-<meta name="description" content="Discover data analytics and business intelligence tools for dashboards, reporting, data visualization, and analysis.">
-<link rel="stylesheet" href="../assets/css/category.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Data Analytics & BI Tools Directory | Toolvora</title>
+  <meta name="description" content="Explore data analytics and business intelligence tools for dashboards, reporting, SQL queries, data visualization, and business insights.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prasadprechu.github.io/Toolvora/data-analytics-tools/">
+  <link rel="stylesheet" href="../assets/css/category.css">
+
+  <style>
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 275px;
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+    }
+
+    .tool-description {
+      flex-grow: 1;
+    }
+
+    .tool-card .tool-label {
+      display: inline-block;
+      padding: 5px 9px;
+      background: #eef2ff;
+      border-radius: 6px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #2457d6;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background .2s ease;
+    }
+
+    .tool-link:hover {
+      background: #183fa8;
+    }
+
+    .directory-note {
+      margin-top: 28px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tool-card {
+        min-height: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header><a class="brand" href="../">Toolvora</a><nav><a href="../">Home</a><a href="../#categories">Categories</a></nav></header>
-<section class="hero"><div class="breadcrumb"><a href="../">Home</a> / Data Analytics</div><h1>Data Analytics & Business Intelligence Tools</h1><p>Explore tools that help transform data into reports, dashboards, visualizations, and actionable insights.</p></section>
+
+<header>
+  <a class="brand" href="../">Toolvora</a>
+  <nav aria-label="Main navigation">
+    <a href="../">Home</a>
+    <a href="../#categories">Categories</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="breadcrumb">
+    <a href="../">Home</a> / Data Analytics & BI Tools
+  </div>
+
+  <h1>Data Analytics & Business Intelligence Tools</h1>
+
+  <p>
+    Discover tools for data visualization, business intelligence,
+    SQL analysis, reporting, and data-driven decision-making.
+  </p>
+</section>
+
 <main>
-<div class="section-heading"><h2>Explore Data Tools</h2><p>Tools for analysts, businesses, and data-driven teams.</p></div>
-<div class="tool-grid">
-<article class="tool-card"><div class="tool-icon">📊</div><span class="tool-label">Visualization</span><h3>Data Visualization</h3><p>Turn datasets into charts, graphs, and visual reports.</p></article>
-<article class="tool-card"><div class="tool-icon">📈</div><span class="tool-label">Business Intelligence</span><h3>BI Dashboards</h3><p>Build dashboards to monitor business performance.</p></article>
-<article class="tool-card"><div class="tool-icon">🗄️</div><span class="tool-label">Data Management</span><h3>Database Tools</h3><p>Explore tools for querying, inspecting, and managing data.</p></article>
-<article class="tool-card"><div class="tool-icon">📝</div><span class="tool-label">Reporting</span><h3>Reporting Tools</h3><p>Prepare reports and share findings with stakeholders.</p></article>
-</div>
-<section class="info-panel"><h2>Make Better Data Decisions</h2><p>Compare data connectors, visualization options, collaboration features, and pricing.</p></section>
+  <section aria-labelledby="tools-heading">
+    <div class="section-heading">
+      <h2 id="tools-heading">Explore Data Analytics Tools</h2>
+      <p>
+        Compare platforms used by data analysts, business teams,
+        data engineers, and decision-makers.
+      </p>
+    </div>
+
+    <div class="tool-grid">
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📊</div>
+        <span class="tool-label">Business Intelligence</span>
+        <h3>Microsoft Power BI</h3>
+        <p class="tool-description">
+          Build interactive dashboards and reports to analyze business
+          data and communicate performance insights.
+        </p>
+        <a class="tool-link" href="https://powerbi.microsoft.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📈</div>
+        <span class="tool-label">Data Visualization</span>
+        <h3>Tableau</h3>
+        <p class="tool-description">
+          Explore datasets through interactive visualizations,
+          dashboards, and analytical reporting.
+        </p>
+        <a class="tool-link" href="https://www.tableau.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🔍</div>
+        <span class="tool-label">Data Analysis</span>
+        <h3>Google Looker Studio</h3>
+        <p class="tool-description">
+          Create shareable reports and dashboards using connected
+          data sources for marketing and business analysis.
+        </p>
+        <a class="tool-link" href="https://lookerstudio.google.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🗄️</div>
+        <span class="tool-label">SQL & Database Analysis</span>
+        <h3>MySQL</h3>
+        <p class="tool-description">
+          Store, query, and manage structured data using a widely
+          used relational database management system.
+        </p>
+        <a class="tool-link" href="https://www.mysql.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🐍</div>
+        <span class="tool-label">Data Science & Analysis</span>
+        <h3>Python</h3>
+        <p class="tool-description">
+          Analyze datasets, automate data workflows, and perform
+          statistical computing with a broad ecosystem of libraries.
+        </p>
+        <a class="tool-link" href="https://www.python.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📓</div>
+        <span class="tool-label">Interactive Data Analysis</span>
+        <h3>Jupyter</h3>
+        <p class="tool-description">
+          Create interactive notebooks that combine code,
+          data analysis, visualizations, and explanatory text.
+        </p>
+        <a class="tool-link" href="https://jupyter.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">⚡</div>
+        <span class="tool-label">Data Transformation</span>
+        <h3>Alteryx</h3>
+        <p class="tool-description">
+          Prepare and transform data and build repeatable analytical
+          workflows for business reporting and decision support.
+        </p>
+        <a class="tool-link" href="https://www.alteryx.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📉</div>
+        <span class="tool-label">Statistical Computing</span>
+        <h3>R Project</h3>
+        <p class="tool-description">
+          Perform statistical analysis, data processing, and
+          visualization using the R programming environment.
+        </p>
+        <a class="tool-link" href="https://www.r-project.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🔄</div>
+        <span class="tool-label">Data Integration</span>
+        <h3>Apache Airflow</h3>
+        <p class="tool-description">
+          Schedule, orchestrate, and monitor data pipelines
+          and recurring data processing workflows.
+        </p>
+        <a class="tool-link" href="https://airflow.apache.org/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">☁️</div>
+        <span class="tool-label">Cloud Data Warehouse</span>
+        <h3>Google BigQuery</h3>
+        <p class="tool-description">
+          Analyze large datasets using a managed cloud data warehouse
+          and SQL-based analytical queries.
+        </p>
+        <a class="tool-link" href="https://cloud.google.com/bigquery"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+    </div>
+
+    <p class="directory-note">
+      Features, availability, and pricing vary by provider and plan.
+      Check official documentation before choosing a tool.
+    </p>
+  </section>
+
+  <section class="info-panel">
+    <h2>Choose the Right Data Analytics Tool</h2>
+    <p>
+      Compare data connectors, supported file formats, visualization
+      features, SQL capabilities, collaboration options, integrations,
+      and pricing to find a suitable platform.
+    </p>
+  </section>
 </main>
-<footer>© 2026 Toolvora · <a href="../">Home</a></footer>
-</body></html>
+
+<footer>
+  <p>© 2026 Toolvora. All rights reserved.</p>
+  <p>
+    <a href="../">Home</a> ·
+    <a href="../#categories">All Categories</a>
+  </p>
+</footer>
+
+</body>
+</html>
