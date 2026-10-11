@@ -1109,6 +1109,47 @@ const tools = [
   ["OBS Studio","https://obsproject.com/","Record video and livestream with flexible scene and source controls.","Free",9],
   ["Descript","https://www.descript.com/","Edit audio and video using transcript-based editing workflows.","Freemium",9],
   ["Unsplash","https://unsplash.com/","Discover images and review the site's current image licensing terms.","Free / License terms apply",9]
+    // Additional tools: 2 per category to reach 12 each
+
+  // 1. AI & Machine Learning Tools (category index 0)
+  ["GitHub Copilot","https://github.com/features/copilot","AI coding assistant that helps developers write, explain, and improve code.","Freemium",0],
+  ["Grammarly","https://www.grammarly.com/","AI writing assistant for improving grammar, clarity, and tone.","Freemium",0],
+
+  // 2. Cybersecurity Tools (category index 1)
+  ["Wazuh","https://wazuh.com/","Open-source security platform for threat detection, monitoring, and compliance.","Free",1],
+  ["OWASP Amass","https://github.com/owasp-amass/amass","Attack surface mapping and external asset discovery tool.","Free",1],
+
+  // 3. Web Development & Developer Tools (category index 2)
+  ["React","https://react.dev/","JavaScript library for building interactive user interfaces.","Free",2],
+  ["Node.js","https://nodejs.org/","JavaScript runtime for building server-side applications and tools.","Free",2],
+
+  // 4. Web Design & UI/UX Tools (category index 3)
+  ["Balsamiq","https://balsamiq.com/","Wireframing tool for planning website and application interfaces.","Paid",3],
+  ["Maze","https://maze.co/","Product research platform for testing prototypes and gathering user feedback.","Freemium",3],
+
+  // 5. SEO & Digital Marketing Tools (category index 4)
+  ["Buffer","https://buffer.com/","Social media publishing and scheduling platform for marketing teams.","Freemium",4],
+  ["Mailchimp","https://mailchimp.com/","Email marketing platform for campaigns, audience management, and automation.","Freemium",4],
+
+  // 6. Cloud Computing & DevOps Tools (category index 5)
+  ["Ansible","https://www.ansible.com/","Automation tool for configuration management and infrastructure operations.","Free / Paid",5],
+  ["Argo CD","https://argo-cd.readthedocs.io/","GitOps continuous delivery tool for Kubernetes applications.","Free",5],
+
+  // 7. Data Analytics & Business Intelligence (category index 6)
+  ["Google BigQuery","https://cloud.google.com/bigquery","Cloud data warehouse for analytics and large-scale SQL queries.","Paid / Free tier",6],
+  ["Alteryx","https://www.alteryx.com/","Analytics automation platform for preparing, blending, and analyzing data.","Paid",6],
+
+  // 8. Automation & No-Code Tools (category index 7)
+  ["Microsoft Power Automate","https://www.microsoft.com/power-platform/products/power-automate","Automate repetitive tasks and connect business applications with workflows.","Freemium",7],
+  ["Pabbly Connect","https://www.pabbly.com/connect/","Connect applications and automate multi-step workflows without extensive coding.","Paid / Free options",7],
+
+  // 9. Business & Productivity Tools (category index 8)
+  ["monday.com","https://monday.com/","Work management platform for projects, team collaboration, and workflows.","Freemium",8],
+  ["Zendesk","https://www.zendesk.com/","Customer service platform for support tickets and customer interactions.","Paid",8],
+
+  // 10. Content Creation & Multimedia Tools (category index 9)
+  ["Blender","https://www.blender.org/","Free, open-source software for 3D modeling, animation, and rendering.","Free",9],
+  ["Riverside","https://riverside.fm/","Recording platform for podcasts, interviews, and high-quality remote video.","Freemium",9],
 ];
 
 /* CREATE CATEGORY CARDS */
@@ -1148,7 +1189,7 @@ categories.forEach((category, index) => {
   section.innerHTML = `
     <div class="section-heading category-heading">
       <div>
-        <p class="eyebrow">CATEGORY ${String(index + 1).padStart(2, "0")}</p>
+        <h2>${category.name}</h2>
         <h2>${category.name}</h2>
         <p>${category.description}</p>
       </div>
