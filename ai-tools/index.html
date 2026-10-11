@@ -4,33 +4,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Tools | Toolvora</title>
-  <meta name="description" content="Discover AI tools for writing, coding, image generation, video creation, and machine learning.">
+
+  <title>AI Tools Directory | Toolvora</title>
+  <meta name="description" content="Explore AI tools for writing, coding, image generation, video creation, research, and machine learning. Compare popular AI tools on Toolvora.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prasadprechu.github.io/Toolvora/ai-tools/">
   <link rel="stylesheet" href="../assets/css/category.css">
+
+  <style>
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 265px;
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+    }
+
+    .tool-card .tool-description {
+      flex-grow: 1;
+    }
+
+    .tool-card .tool-label {
+      display: inline-block;
+      padding: 5px 9px;
+      background: #eef2ff;
+      border-radius: 6px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #2457d6;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background .2s ease;
+    }
+
+    .tool-link:hover {
+      background: #183fa8;
+    }
+
+    .directory-note {
+      margin-top: 28px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .hero .breadcrumb {
+      margin-bottom: 18px;
+    }
+
+    .hero .breadcrumb a {
+      color: #2457d6;
+    }
+
+    @media (max-width: 600px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tool-card {
+        min-height: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
-  <a class="brand" href="../">Toolvora</a>
-  <nav><a href="../">Home</a><a href="../#categories">Categories</a></nav>
+  <a class="brand" href="../" aria-label="Toolvora homepage">Toolvora</a>
+
+  <nav aria-label="Main navigation">
+    <a href="../">Home</a>
+    <a href="../#categories">Categories</a>
+  </nav>
 </header>
+
 <section class="hero">
-  <div class="breadcrumb"><a href="../">Home</a> / AI Tools</div>
-  <h1>AI & Machine Learning Tools</h1>
-  <p>Discover AI-powered tools for writing, coding, image generation, video creation, and intelligent automation.</p>
+  <div class="breadcrumb">
+    <a href="../">Home</a> / AI &amp; Machine Learning Tools
+  </div>
+
+  <h1>AI &amp; Machine Learning Tools</h1>
+
+  <p>
+    Discover AI tools for writing, coding, research, image generation,
+    video creation, productivity, and machine learning. Explore popular
+    platforms and find tools suited to your workflow.
+  </p>
 </section>
+
 <main>
-  <div class="section-heading">
-    <h2>Explore AI Tools</h2>
-    <p>Explore tools by their purpose and capabilities.</p>
-  </div>
-  <div class="tool-grid">
-    <article class="tool-card"><div class="tool-icon">🤖</div><span class="tool-label">AI Assistants</span><h3>AI Chatbots</h3><p>AI assistants for research, questions, and everyday tasks.</p></article>
-    <article class="tool-card"><div class="tool-icon">✍️</div><span class="tool-label">AI Writing</span><h3>Writing Tools</h3><p>Tools for drafting, rewriting, summarizing, and editing content.</p></article>
-    <article class="tool-card"><div class="tool-icon">💻</div><span class="tool-label">AI Development</span><h3>AI Coding Tools</h3><p>Assist with code generation, debugging, and software development.</p></article>
-    <article class="tool-card"><div class="tool-icon">🎨</div><span class="tool-label">AI Creativity</span><h3>Image & Video AI</h3><p>Discover tools for generating images, video, and creative assets.</p></article>
-  </div>
-  <section class="info-panel"><h2>Find the Right AI Tool</h2><p>Compare tool features, use cases, pricing, and available plans as the directory grows.</p></section>
+  <section aria-labelledby="explore-heading">
+    <div class="section-heading">
+      <h2 id="explore-heading">Explore AI Tools</h2>
+      <p>
+        Browse AI platforms by their capabilities, from intelligent
+        assistants and content creation to coding and visual design.
+      </p>
+    </div>
+
+    <div class="tool-grid">
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🤖</div>
+        <span class="tool-label">AI Assistant</span>
+        <h3>ChatGPT</h3>
+        <p class="tool-description">
+          An AI assistant for writing, research, brainstorming,
+          problem-solving, and everyday tasks.
+        </p>
+        <a class="tool-link" href="https://chatgpt.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">✨</div>
+        <span class="tool-label">AI Assistant</span>
+        <h3>Google Gemini</h3>
+        <p class="tool-description">
+          Explore Google's AI assistant for research, writing,
+          learning, and other productivity tasks.
+        </p>
+        <a class="tool-link" href="https://gemini.google.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🧠</div>
+        <span class="tool-label">AI Assistant</span>
+        <h3>Claude</h3>
+        <p class="tool-description">
+          An AI assistant for working with documents, writing,
+          analysis, coding, and complex questions.
+        </p>
+        <a class="tool-link" href="https://claude.ai/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🔎</div>
+        <span class="tool-label">AI Research</span>
+        <h3>Perplexity</h3>
+        <p class="tool-description">
+          An AI-powered answer and research platform for exploring
+          questions and finding source-backed information.
+        </p>
+        <a class="tool-link" href="https://www.perplexity.ai/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">💻</div>
+        <span class="tool-label">AI Coding</span>
+        <h3>GitHub Copilot</h3>
+        <p class="tool-description">
+          AI-powered coding assistance for developers working
+          with code, suggestions, and software projects.
+        </p>
+        <a class="tool-link" href="https://github.com/features/copilot"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🎨</div>
+        <span class="tool-label">AI Image Generation</span>
+        <h3>Adobe Firefly</h3>
+        <p class="tool-description">
+          AI-powered creative tools for generating and editing
+          visual assets and design concepts.
+        </p>
+        <a class="tool-link" href="https://firefly.adobe.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🖼️</div>
+        <span class="tool-label">AI Image Generation</span>
+        <h3>Leonardo AI</h3>
+        <p class="tool-description">
+          Explore AI-assisted image generation and visual
+          asset creation for creative projects.
+        </p>
+        <a class="tool-link" href="https://leonardo.ai/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">🎬</div>
+        <span class="tool-label">AI Video</span>
+        <h3>Runway</h3>
+        <p class="tool-description">
+          AI-powered tools for video generation, editing,
+          and creative visual production.
+        </p>
+        <a class="tool-link" href="https://runwayml.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">✍️</div>
+        <span class="tool-label">AI Writing</span>
+        <h3>Grammarly</h3>
+        <p class="tool-description">
+          Writing assistance for grammar, clarity, tone,
+          and improving written communication.
+        </p>
+        <a class="tool-link" href="https://www.grammarly.com/"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon" aria-hidden="true">📝</div>
+        <span class="tool-label">AI Productivity</span>
+        <h3>Notion AI</h3>
+        <p class="tool-description">
+          AI features integrated into a workspace for notes,
+          document writing, knowledge management, and productivity.
+        </p>
+        <a class="tool-link" href="https://www.notion.com/product/ai"
+           target="_blank" rel="noopener noreferrer">
+          Visit Website ↗
+        </a>
+      </article>
+
+    </div>
+
+    <p class="directory-note">
+      Toolvora is an independent tool directory. Features, availability,
+      and pricing may change. Check each provider's official website
+      for the latest details.
+    </p>
+  </section>
+
+  <section class="info-panel" aria-labelledby="choose-heading">
+    <h2 id="choose-heading">How to Choose the Right AI Tool</h2>
+    <p>
+      Start with your use case, such as writing, coding, research,
+      image generation, or video creation. Compare the available
+      features, usage limits, privacy policies, and pricing before
+      selecting a tool.
+    </p>
+  </section>
 </main>
-<footer>© 2026 Toolvora · <a href="../">Home</a></footer>
+
+<footer>
+  <p>© 2026 Toolvora. All rights reserved.</p>
+  <p>
+    <a href="../">Home</a> ·
+    <a href="../#categories">All Categories</a>
+  </p>
+</footer>
+
 </body>
 </html>
